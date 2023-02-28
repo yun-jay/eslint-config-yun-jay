@@ -1,18 +1,9 @@
 {
-  "ignorePatterns": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-  "overrides": [
-    {
-      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
-      "options": {
-        "printWidth": 100,
-        "singleQuote": true,
-        "trailingComma": "none",
-        "tabWidth": 2,
-        "semi": true,
-        "jsxBracketSameLine": false,
-        "importOrder": ["^[^.]","^\\."],
-        "importOrderSeparation": true
-      }
-    }
-  ]
+  "plugins": ["prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSameLine": false
 }
