@@ -31,6 +31,7 @@ module.exports = {
   ],
   plugins: ['react-hooks', 'react-prefer-function-component', 'prefer-arrow-functions'],
   rules: {
+    "react/function-component-definition": "off",
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
