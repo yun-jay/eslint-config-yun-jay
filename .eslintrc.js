@@ -95,6 +95,8 @@ module.exports = {
       {
         'depth': 1
       }
-    ]
+    ],
+    'no-underscore-dangle': 'off',
+    'import/no-cycle': 'off'
   },
 };
