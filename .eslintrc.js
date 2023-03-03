@@ -88,6 +88,13 @@ module.exports = {
         specialLink: ['hrefLeft', 'hrefRight'],
         aspects: ['invalidHref', 'preferButton']
       }
+    ],
+    'no-restricted-exports': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        'depth': 1
+      }
     ]
-  }
+  },
 };
