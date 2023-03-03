@@ -19,7 +19,6 @@ module.exports = {
     node: true // Enables Node.js global variables and Node.js scoping.
   },
   extends: [
-    'next/core-web-vitals',
     'airbnb',
     'eslint:recommended',
     'plugin:import/errors',
@@ -27,6 +26,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'plugin:react-prefer-function-component/recommended',
+    'next',
     'prettier'
   ],
   plugins: ['react-hooks', 'react-prefer-function-component', 'prefer-arrow-functions'],
