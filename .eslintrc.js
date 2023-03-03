@@ -97,6 +97,7 @@ module.exports = {
       }
     ],
     'no-underscore-dangle': 'off',
-    'import/no-cycle': 'off'
+    'import/no-cycle': 'off',
+    'global-require': 'off'
   },
 };
