@@ -98,6 +98,7 @@ module.exports = {
     ],
     'no-underscore-dangle': 'off',
     'import/no-cycle': 'off',
-    'global-require': 'off'
+    'global-require': 'off',
+    'react/require-default-props': 'off'
   },
 };
