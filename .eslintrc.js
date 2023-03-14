@@ -21,6 +21,7 @@ module.exports = {
   extends: [
     'airbnb',
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
@@ -29,9 +30,15 @@ module.exports = {
     'next',
     'prettier'
   ],
-  plugins: ['react-hooks', 'react-prefer-function-component', 'prefer-arrow-functions'],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'react-hooks',
+    'react-prefer-function-component',
+    'prefer-arrow-functions',
+    '@typescript-eslint'
+  ],
   rules: {
-    "react/function-component-definition": "off",
+    'react/function-component-definition': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
@@ -80,7 +87,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Use our .prettierrc file as source
-    'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -93,12 +99,12 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': [
       2,
       {
-        'depth': 1
+        depth: 1
       }
     ],
     'no-underscore-dangle': 'off',
     'import/no-cycle': 'off',
     'global-require': 'off',
     'react/require-default-props': 'off'
-  },
+  }
 };
