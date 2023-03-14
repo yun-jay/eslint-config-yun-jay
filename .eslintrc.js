@@ -105,6 +105,9 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'import/no-cycle': 'off',
     'global-require': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
+    'no-nested-ternary': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error']
   }
 };
